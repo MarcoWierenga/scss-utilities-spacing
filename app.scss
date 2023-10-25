@@ -1,4 +1,4 @@
-$util-classes: (
+$directions: (
 	'': '',
 	'x': -inline,
 	'y': -block,
@@ -9,14 +9,14 @@ $util-classes: (
 );
 
 // Generates paddings
-@each $class-short, $class-name in $util-classes {
+@each $class-short, $class-name in $directions {
 	.-p#{$class-short}0 {
 		padding#{$class-name}: 0; 
 	}
 }
 
 // Generates margins
-@each $class-short, $class-name in $util-classes {
+@each $class-short, $class-name in $directions {
 	.-m#{$class-short}0 {
 		margin#{$class-name}: 0; 
 	}
